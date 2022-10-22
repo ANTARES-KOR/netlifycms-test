@@ -5,7 +5,7 @@ backend:
   open-authoring: true
   squash_merges: true
 publish_mode: editorial_workflow
-media_folder: "static/assets/"
+media_folder: "static/assets"
 public_folder: "assets"
 site_url: https://introducing-ybigta.pages.dev
 locale: "ko"
@@ -13,6 +13,7 @@ locale: "ko"
 collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
+    media_folder: "static/assets/about"
     folder: "/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -41,6 +42,7 @@ collections:
   - name: "teams" # Used in routes, e.g., /admin/collections/blog
     label: "Teams" # Used in the UI
     folder: "/teams" # The path to the folder where the documents are stored
+    media_folder: "static/assets/teams"
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
