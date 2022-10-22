@@ -1,4 +1,5 @@
 ---
+title: "About"
 sidebar_label: "About US: 학회 활동 소개"
 sidebar_position: 1
 ---

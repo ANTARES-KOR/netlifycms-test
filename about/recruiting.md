@@ -1,4 +1,5 @@
 ---
+title: "Recruiting"
 sidebar_label: "Recruiting : 21기"
 sidebar_position: 3
 ---

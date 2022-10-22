@@ -1,4 +1,5 @@
 ---
+title: "Curriculum"
 sidebar_label: "Curriculum : 방학 교육세션"
 sidebar_position: 2
 ---
