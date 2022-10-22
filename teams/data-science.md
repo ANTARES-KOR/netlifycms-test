@@ -1,10 +1,12 @@
-import Image from "@theme/IdealImage";
+---
+title: "Data Science"
+sidebar_label: "Data Science Team"
+sidebar_position: 4
+---
 
 # Data Science Team
 
-<div style={{ maxWidth: "640px", margin: "4rem auto" }}>
-  <Image img={require("./assets/data_science.png")} />
-</div>
+![data_science](./assets/data_science.png)
 
 사이언스 팀은 기본적인 회귀분석과 같은 **기초적인 Machine Learning 모델부터, NLP와 컴퓨터비전에 활용되는 딥러닝 모델의 활용방법 및 작동원리**를 배우며 필요한 작업에 적합하게 이용할 수 있도록 함께 공부해 나가는 팀입니다.
 
