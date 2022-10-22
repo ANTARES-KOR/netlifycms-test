@@ -1,0 +1,62 @@
+---
+sidebar_label: ✅ 봄 여름 가을 겨울
+---
+
+import ReactPlayer from "react-player";
+import Image from "@theme/IdealImage";
+
+# ✅ 봄여름가을겨울 - 퍼스널컬러 진단 AI
+
+<ReactPlayer
+  url="https://www.youtube.com/watch?v=WJGSemkQzJI"
+  style={{ margin: "4rem auto" }}
+/>
+
+:::note 개요
+**인물 사진을 업로드하면** **학습된 AI가 퍼스널컬러 진단**하고 결과값을 내보내는 **플랫폼 구현**
+:::
+
+## ✅ 프로젝트 진행 과정
+
+<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
+  <Image img={require("./assets/7-personal-color/1.png")} />
+</div>
+
+### 개요
+
+- 퍼스널컬러란 사람의 피부톤과 가장 잘 어울리는 색채학 이론으로 색, 채도, 명도를 바탕으로 봄웜/여름쿨/가을웜/겨울쿨로 나눈다
+- 퍼스널컬러는 개인에게 더 맞는 화장품, 옷, 장신구 등을 찾을 수 있게 해 활용도 점점 높아지지만 진단 받는 것은 시간과 비용이 많이 든다 → 서비스 구현하게 된 계기
+
+<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
+  <Image img={require("./assets/7-personal-color/2.png")} />
+</div>
+
+### 서비스 아키텍처
+
+- 샘플 데이터 수집 (퍼스널컬러가 알려진 유명 연예인들)
+- Skin Color Segmentation을 통해 인물 사진 데이터에서 피부색 데이터만 정제
+- HSV Histogram Classification을 통해 색/명도/채도 값을 백터 데이터로 이산화
+  - 전형적인 CV 모델인 DL 계열 (CNN 등) 사용하기엔 데이터 수가 턱 없이 부족 → 오버핏팅 가능성
+- 이산화된 데이터들을 CSV 파일로 내보내 AutoML 모델로 학습 시킴
+  - 파라미터 최적화, Bin값 설정 등을 통해 최대 Accuracy 62.3%
+  - 봄 데이터의 경우 Accuracy 51%로 제일 낮은 값을 보이는데 이는 봄웜 톤 자체가 사진으로는 여름과 가을로 쉽게 혼돈될 수 있기 때문 → 도메인 지식과 샘플 데이터가 더 많았으면 개선 가능
+- 프론트엔드/백엔드 작업을 통해 웹페이지 구현 - 모델과 서버를 통해 연동 후 서비스 개시
+
+## ✅ 프로젝트 결과
+
+### 웹페이지 구현
+
+<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
+  <Image img={require("./assets/7-personal-color/3.png")} />
+</div>
+
+1. **인풋 화면**
+   - 유저가 얼굴이 잘 보이는 인물 사진을 업로드
+   - 업로드 된 사진은 서버로 넘어가 pre-trained 모델이 퍼스널컬러 값을 진단
+
+<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
+  <Image img={require("./assets/7-personal-color/4.png")} />
+</div>
+
+2. **결과 화면**
+   - 모델에서 분석한 퍼스널컬러 결과값(봄, 여름, 가을, 겨울)을 페이지로 내보낸다
