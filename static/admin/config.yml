@@ -2,18 +2,40 @@ backend:
   name: github
   repo: ANTARES-KOR/netlifycms-test
   branch: chore/netlifycms
+  open-authoring: true
+  squash_merges: true
+publish_mode: editorial_workflow
 media_folder: "static/assets/"
 public_folder: "assets"
 site_url: https://introducing-ybigta.pages.dev
 locale: "ko"
 
 collections:
-  - name: "docs" # Used in routes, e.g., /admin/collections/blog
-    label: "Docs" # Used in the UI
-    folder: "/docs" # The path to the folder where the documents are stored
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About" # Used in the UI
+    folder: "/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{order}}-{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "docs" }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", default: "about", hidden: true }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          description: "생성될 마크다운 파일의 제목입니다.",
+        }
+      - {
+          label: "Order",
+          name: "sidebar_position",
+          widget: "number",
+          required: false,
+          description: "사이드바에 표시되는 순서입니다. 숫자가 작을수록 위에 표시됩니다.",
+        }
+      - {
+          label: "Sidebar Label",
+          name: "sidebar_label",
+          widget: "string",
+          default: "title",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -32,6 +32,16 @@ const config = {
       "content-docs",
       /** @type {import('@docusaurus/plugin-content-docs').Options} */
       ({
+        id: "about",
+        path: "about",
+        routeBasePath: "about",
+        sidebarPath: require.resolve("./sidebars.js"),
+      }),
+    ],
+    [
+      "content-docs",
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
         id: "teams",
         path: "teams",
         routeBasePath: "teams",
@@ -65,13 +75,7 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -100,8 +104,7 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "about",
+            to: "about/intro",
             position: "left",
             label: "About",
           },
@@ -130,19 +133,19 @@ const config = {
             items: [
               {
                 label: "About us",
-                to: "/docs/about",
+                to: "/about/intro",
               },
               {
                 label: "Recruiting",
-                to: "/docs/recruiting",
+                to: "/about/recruiting",
               },
               {
                 label: "Curriculum",
-                to: "/docs/curriculum",
+                to: "/about/curriculum",
               },
               {
                 label: "Alumni",
-                to: "/docs/alumni",
+                to: "/about/alumni",
               },
             ],
           },

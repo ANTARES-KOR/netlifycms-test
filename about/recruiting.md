@@ -1,3 +1,8 @@
+---
+sidebar_label: "Recruiting : 21기"
+sidebar_position: 3
+---
+
 # RECRUITING : 21기
 
 :::tip 21기 리크루팅 종료 안내

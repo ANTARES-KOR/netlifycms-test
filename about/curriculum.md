@@ -1,3 +1,8 @@
+---
+sidebar_label: "Curriculum : 방학 교육세션"
+sidebar_position: 2
+---
+
 # CURRICULUM : 방학 교육세션
 
 ### YBIGTA 교육세션의 목적
