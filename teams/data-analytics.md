@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Data Analytics Team
 
-![Data Analytics Team](./assets/data_analytics.png)
+![Data Analytics Team](/assets/data_analytics.png)
 
 애널리틱스 팀은 **데이터 수집부터 전처리, 모델링, 시각화까지 데이터 분석의 all-rounder**를 지향하는 팀입니다. Crawling, Machine Learning, Deep Learning, Visualization, Front-End 등 모든 분야에 걸친 다양한 지식은 물론, 활성화된 스터디와 공모전을 통해 팀원들과 많은 경험을 쌓아 나가실 수 있습니다.
 
