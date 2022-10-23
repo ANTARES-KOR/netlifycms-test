@@ -1,12 +1,11 @@
 ---
-title: "Data Engineering"
-sidebar_label: "Data Engineering Team"
+title: Data Engineering
 sidebar_position: 3
+sidebar_label: Data Engineering Team
 ---
-
 # Data Engineering Team
 
-![Data Pipeline](/assets/teams/data_pipeline.png)
+![data-pipeline](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666498203/teams/data_pipeline_ynrcgh.png)
 
 데이터 엔지니어링 팀에서는 데이터 분석 및 시각화, 머신 러닝 등에 사용할 수 있도록 **다양한 데이터를 수집하고, 변환하고, 저장하는 (ETL) 데이터 파이프라인의 전반적인 과정**에 대해서 학습합니다.
 
