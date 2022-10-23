@@ -4,7 +4,7 @@ sidebar_label: 📚 북실북실 # 사이드바에 표시될 라벨. 이걸 안�
 
 # 📚 북실북실 - 아동도서관리 어플리케이션
 
-```
+```mdx-code-block
 import ReactPlayer from "react-player";
 
 <ReactPlayer
