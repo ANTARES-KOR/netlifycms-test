@@ -74,29 +74,19 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
-    - name: "conference" 
-      label: "Conference"
-      folder: "/conference"
-      create: true
-      slug: "{{title}}"
-      nested:
-        depth: 1
-      fields:
-        - {
-            label: "제목",
-            name: "title",
-            widget: "string",
-            description: "생성될 마크다운 파일의 제목입니다.",
-          }
-        - {
-          label : "Body",
-          name: "body",
-          widget: "markdown",
-        }
-      meta: {
-        path: {
+  - name: "conference"
+    label: "Conference"
+    folder: "/conference"
+    create: true
+    slug: "{{title}}"
+    nested:
+      depth: 1
+    fields:
+      - {
+          label: "제목",
+          name: "title",
           widget: "string",
-          label: "Path",
-          index_file: "index",
-        },
-      }
+          description: "생성될 마크다운 파일의 제목입니다.",
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+    meta: { path: { widget: "string", label: "Path", index_file: "index" } }
