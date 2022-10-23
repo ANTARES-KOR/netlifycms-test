@@ -4,45 +4,45 @@ backend:
   branch: chore/netlifycms
   open-authoring: true
   squash_merges: true
+media_folder: "/static/assets"
 publish_mode: editorial_workflow
-media_folder: "static/assets"
-public_folder: "assets"
 site_url: https://introducing-ybigta.pages.dev
 locale: "ko"
 
 collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
-    media_folder: "static/assets/about"
+    media_folder: "static/assets"
     folder: "/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {
-          label: "Title",
+          label: "제목",
           name: "title",
           widget: "string",
-          description: "생성될 마크다운 파일의 제목입니다.",
+          description: "이 문서의 제목입니다.",
         }
       - {
-          label: "Order",
+          label: "사이드바 순서",
           name: "sidebar_position",
           widget: "number",
           required: false,
           description: "사이드바에 표시되는 순서입니다. 숫자가 작을수록 위에 표시됩니다.",
         }
       - {
-          label: "title",
+          label: "사이드바 라벨",
           name: "sidebar_label",
           widget: "string",
           default: "title",
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "teams" # Used in routes, e.g., /admin/collections/blog
     label: "Teams" # Used in the UI
     folder: "/teams" # The path to the folder where the documents are stored
-    media_folder: "static/assets/teams"
+    media_folder: "static/assets"
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
