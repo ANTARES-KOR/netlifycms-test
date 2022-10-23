@@ -1,5 +1,5 @@
 ---
-title: "all-in-space"
+title: "All in space"
 sidebar_label: 🗣 All-in-Space
 ---
 

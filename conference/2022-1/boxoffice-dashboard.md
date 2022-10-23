@@ -1,5 +1,5 @@
 ---
-title: "boxoffice-dashboard"
+title: 박스오피스 대시보드
 ---
 
 # 📽️ Boxoffice DashBoard
