@@ -1,3 +1,7 @@
+---
+title: kbo-dashboard
+---
+
 # 🧢 KBO 대시보드
 
 ```mdx-code-block

@@ -1,3 +1,7 @@
+---
+title: grid-trading
+---
+
 # 📈 그리드 트레이딩
 
 ```mdx-code-block

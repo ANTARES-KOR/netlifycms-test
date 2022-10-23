@@ -1,3 +1,7 @@
+---
+title: "boxoffice-dashboard"
+---
+
 # 📽️ Boxoffice DashBoard
 
 ```mdx-code-block
