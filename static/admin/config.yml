@@ -74,9 +74,9 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "2022-1_conference"
-    label: "2022-1 Conference"
-    folder: "/conference/2022-1"
+  - name: "conference"
+    label: "Conference"
+    folder: "/conference"
     create: true
     slug: "{{title}}"
     nested:
