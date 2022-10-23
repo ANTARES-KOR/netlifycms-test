@@ -80,7 +80,10 @@ collections:
     create: true
     slug: "{{title}}"
     nested:
-      depth: 1
+      depth: 2
+    # adding a meta object with a path property allows editing the path of entries
+    # moving an existing entry will move the entire sub tree of the entry to the new location
+    meta: { path: { widget: string, label: "Path", index_file: "_index" } }
     fields:
       - {
           label: "제목",
@@ -98,50 +101,68 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "2021-2_conference"
-    label: "2021-2 Conference"
-    folder: "/conference/2021-2"
-    create: true
-    slug: "{{title}}"
-    nested:
-      depth: 1
-    fields:
-      - {
-          label: "제목",
-          name: "title",
-          widget: "string",
-          description: "생성될 마크다운 파일의 제목입니다.",
-        }
-      - {
-          label: "사이드바 라벨",
-          name: "sidebar_label",
-          widget: "string",
-          default: "title",
-          required: false,
-          description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "2022-1_conference"
+  #   label: "2022-1 Conference"
+  #   folder: "/conference/2022-1"
+  #   create: true
+  #   slug: "{{title}}"
+  #   fields:
+  #     - {
+  #         label: "제목",
+  #         name: "title",
+  #         widget: "string",
+  #         description: "생성될 마크다운 파일의 제목입니다.",
+  #       }
+  #     - {
+  #         label: "사이드바 라벨",
+  #         name: "sidebar_label",
+  #         widget: "string",
+  #         default: "title",
+  #         required: false,
+  #         description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
+  #       }
+  #     - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "2021-1_conference"
-    label: "2021-1 Conference"
-    folder: "/conference/2021-1"
-    create: true
-    slug: "{{title}}"
-    nested:
-      depth: 1
-    fields:
-      - {
-          label: "제목",
-          name: "title",
-          widget: "string",
-          description: "생성될 마크다운 파일의 제목입니다.",
-        }
-      - {
-          label: "사이드바 라벨",
-          name: "sidebar_label",
-          widget: "string",
-          default: "title",
-          required: false,
-          description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # - name: "2021-2_conference"
+  #   label: "2021-2 Conference"
+  #   folder: "/conference/2021-2"
+  #   create: true
+  #   slug: "{{title}}"
+  #   fields:
+  #     - {
+  #         label: "제목",
+  #         name: "title",
+  #         widget: "string",
+  #         description: "생성될 마크다운 파일의 제목입니다.",
+  #       }
+  #     - {
+  #         label: "사이드바 라벨",
+  #         name: "sidebar_label",
+  #         widget: "string",
+  #         default: "title",
+  #         required: false,
+  #         description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
+  #       }
+  #     - { label: "Body", name: "body", widget: "markdown" }
+
+  # - name: "2021-1_conference"
+  #   label: "2021-1 Conference"
+  #   folder: "/conference/2021-1"
+  #   create: true
+  #   slug: "{{title}}"
+  #   fields:
+  #     - {
+  #         label: "제목",
+  #         name: "title",
+  #         widget: "string",
+  #         description: "생성될 마크다운 파일의 제목입니다.",
+  #       }
+  #     - {
+  #         label: "사이드바 라벨",
+  #         name: "sidebar_label",
+  #         widget: "string",
+  #         default: "title",
+  #         required: false,
+  #         description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
+  #       }
+  #     - { label: "Body", name: "body", widget: "markdown" }
