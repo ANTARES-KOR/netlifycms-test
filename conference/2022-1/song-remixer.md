@@ -1,5 +1,6 @@
 ---
 title: song-remixer
+sidebar_label: 🎶 이 노래 지겨워!
 ---
 
 # 🎶 이 노래 지겨워!

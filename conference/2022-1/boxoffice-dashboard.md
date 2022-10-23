@@ -1,5 +1,6 @@
 ---
 title: 박스오피스 대시보드
+sidebar_label: 📽️ Boxoffice DashBoard
 ---
 
 # 📽️ Boxoffice DashBoard

@@ -1,5 +1,6 @@
 ---
 title: todays-song
+sidebar_label: 🎧 오늘의 노래
 ---
 
 # 🎧 오늘의 노래
