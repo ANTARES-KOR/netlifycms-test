@@ -5,6 +5,12 @@ backend:
   open-authoring: true
   squash_merges: true
 media_folder: "/static/assets"
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dr6b9c9ko
+    api_key: 913799982146956
+
 publish_mode: editorial_workflow
 site_url: https://introducing-ybigta.pages.dev
 locale: "ko"
