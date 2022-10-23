@@ -41,6 +41,7 @@ collections:
           widget: "string",
           default: "title",
           required: false,
+          description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
         }
       - { label: "Body", name: "body", widget: "markdown" }
 
@@ -51,23 +52,51 @@ collections:
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {
-          label: "Title",
+          label: "제목",
           name: "title",
           widget: "string",
           description: "생성될 마크다운 파일의 제목입니다.",
         }
       - {
-          label: "Order",
+          label: "사이드바 순서",
           name: "sidebar_position",
           widget: "number",
           required: false,
           description: "사이드바에 표시되는 순서입니다. 숫자가 작을수록 위에 표시됩니다.",
         }
       - {
-          label: "title",
+          label: "사이드바 라벨",
           name: "sidebar_label",
           widget: "string",
           default: "title",
           required: false,
+          description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
+    - name: "conference" 
+      label: "Conference"
+      folder: "/conference"
+      create: true
+      slug: "{{title}}"
+      nested:
+        depth: 1
+      fields:
+        - {
+            label: "제목",
+            name: "title",
+            widget: "string",
+            description: "생성될 마크다운 파일의 제목입니다.",
+          }
+        - {
+          label : "Body",
+          name: "body",
+          widget: "markdown",
+        }
+      meta: {
+        path: {
+          widget: "string",
+          label: "Path",
+          index_file: "index",
+        },
+      }
