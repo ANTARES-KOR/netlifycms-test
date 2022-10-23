@@ -1,34 +1,23 @@
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # 🧢 KBO 대시보드
+
+```mdx-code-block
+import ReactPlayer from "react-player";
 
 <ReactPlayer
   url="https://www.youtube.com/watch?v=nmVLH_Juqcs"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 ## 🧢 프로젝트 진행 과정
 
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/2-kbo-dashboard/1.jpeg")} />
-  <Image img={require("./assets/2-kbo-dashboard/2.jpeg")} />
-</div>
+![](./assets/kbo-dashboard/1.jpeg)
+![](./assets/kbo-dashboard/2.jpeg)
 
 - Modeling
   - 18~22년의 5개년 데이터를 추출함.
   - 이상치가 많고, 적은 양의 데이터를 보완하기 위해 XGBoost, ridge, KNN regressor를 Hard Voting하여 사용
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/3.jpeg")} />
-</div>
+![](./assets/kbo-dashboard/3.jpeg)
 
 - 서버 아키텍처
   - 총 2개의 도커 서버를 사용하여 한 서버에서는 웹을 구성, 다른 서버에서는 정해진 시간에 일정한 작업을 수행할 수 있도록 Cron Server운영
@@ -39,46 +28,28 @@ import Image from "@theme/IdealImage";
 
 ## 🧢 프로젝트 결과
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/4.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/5.png")} />
-</div>
+![](./assets/kbo-dashboard/4.png)
+![](./assets/kbo-dashboard/5.png)
 
 - 실시간으로 데이터 업데이트를 진행하여 1분에 한 번 씩 결과 반영
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/6.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/7.png")} />
-</div>
+![](./assets/kbo-dashboard/6.png)
+![](./assets/kbo-dashboard/7.png)
 
 - 하루에 한 번 씩 크롤링을 진행하여 홈페이지에 반영
 - 하루에 한 번씩 업데이트 데이터를 이용하여 백엔드 서버에서 예측 모델을 돌려 예측 순위를 보여줌
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/8.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/9.png")} />
-</div>
+![](./assets/kbo-dashboard/8.png)
+![](./assets/kbo-dashboard/9.png)
 
 - 각 팀별 페이지를 만들어 팀 별 정보(우승횟수, 주전 등), NLP한 결과 (워드클라우드) 를 보여줌
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/10.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/11.png")} />
-</div>
+![](./assets/kbo-dashboard/10.png)
+![](./assets/kbo-dashboard/11.png)
 
 - 매일 크롤링을 진행하여 OPS/ERA 순위별로 선수들을 나열함
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/2-kbo-dashboard/12.png")} />
-</div>
+![](./assets/kbo-dashboard/12.png)
 
 - 하루에 한 번 크롤링한 데이터를 모델에 넣어 예측한 결과를 보여줌
 

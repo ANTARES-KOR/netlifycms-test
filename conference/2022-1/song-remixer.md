@@ -1,21 +1,19 @@
-import ReactPlayer from "react-player";
 import Image from "@theme/IdealImage";
 
 # 🎶 이 노래 지겨워!
 
+```mdx-code-block
+import ReactPlayer from "react-player";
+
 <ReactPlayer
   url="https://www.youtube.com/watch?v=B_WxaVSvbAI"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 ## 🎶 프로젝트 진행 과정
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/1.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/2.png")} />
-</div>
+![](./assets/song-remixer/1.png)
+![](./assets/song-remixer/2.png)
 
 Frontend, Backend, Model은 화면과 같은 방법으로 구현. web page와 spotify web api를 활용하고 auto-encoder를 활용한 model에서 remix할 곡을 추천받아 remixing. Node.js로 구현한 backend가 양방향 통신으로 전체적인 sequence를 진행.
 
@@ -23,15 +21,7 @@ Frontend, Backend, Model은 화면과 같은 방법으로 구현. web page와 sp
 
 webpage에서 사용자가 원하는 곡을 검색하면, 검색 결과로 세 곡이 표시되며 미리듣기를 통해 원하는 곡이 맞는지 확인할 수 있음. 원하는 곡이 맞다면 check버튼을 누르면 곧바로 해당 곡과 가장 유사도가 높은 곡을 추천하여 리믹스하여 유저에게 표시됨.
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/3.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/4.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/5.png")} />
-</div>
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/4-song-remixer/6.png")} />
-</div>
+![](./assets/song-remixer/3.png)
+![](./assets/song-remixer/4.png)
+![](./assets/song-remixer/5.png)
+![](./assets/song-remixer/6.png)

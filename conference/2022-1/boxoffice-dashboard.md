@@ -1,12 +1,12 @@
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # 📽️ Boxoffice DashBoard
 
+```mdx-code-block
+import ReactPlayer from "react-player";
+
 <ReactPlayer
-  url="https://www.youtube.com/watch?v=6J_9PxRvozk"
-  style={{ margin: "4rem auto" }}
+url="https://www.youtube.com/watch?v=6J_9PxRvozk"
 />
+```
 
 ## 📽️ 프로젝트 진행 과정
 
@@ -17,24 +17,18 @@ import Image from "@theme/IdealImage";
 - csv파일로 흘러가는 데이터를 elasticsearch에 넣어주기 위해, 모델에서 나온 데이터가 S3에 저장되는 순간 이를 트리거로 사용하는 lambda에서 json 파일로 변환
 - 저장된 데이터를 이용하여 kibana 시각화
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/8-boxoffice-dashboard/1.png")} />
-</div>
+![](./assets/boxoffice-dashboard/1.png)
 
 ### 2. Data Pipeline
 
 - 일별 박스오피스 API에서 받아온 영화이름을 이용해 리뷰, 평점, 뉴스 언급량 크롤링
 - 일별 박스오피스 API에서 받아온 영화코드를 영화 상세정보 API의 요청 변수로 넣어 해당 데이터 가져옴.
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/8-boxoffice-dashboard/2.png")} />
-</div>
+![](./assets/boxoffice-dashboard/2.png)
 
 ### 3. Model
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/8-boxoffice-dashboard/3.png")} />
-</div>
+![](./assets/boxoffice-dashboard/3.png)
 
 1. **관객반응 지수 예측**
    - KoBERT 활용하여 감성값 labeling 진행
@@ -45,9 +39,7 @@ import Image from "@theme/IdealImage";
 
 ### 4. 최종 데이터
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/8-boxoffice-dashboard/4.png")} />
-</div>
+![](./assets/boxoffice-dashboard/4.png)
 
 - 위와 같은 두 개의 테이블을 각각 json으로 변환하여 opensearch에 넣음
 
@@ -55,13 +47,5 @@ import Image from "@theme/IdealImage";
 
 - elasticsearch에 들어간 데이터는 바로 kibana에서 index pattern을 생성해 대시보드를 만들 수 있음
 
-<div
-  style={{
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/8-boxoffice-dashboard/5.png")} />
-  <Image img={require("./assets/8-boxoffice-dashboard/6.png")} />
-</div>
+![](./assets/boxoffice-dashboard/5.png)
+![](./assets/boxoffice-dashboard/6.png)

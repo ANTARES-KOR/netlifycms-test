@@ -18,7 +18,6 @@ locale: "ko"
 collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
-    media_folder: "static/assets"
     folder: "/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -48,7 +47,6 @@ collections:
   - name: "teams" # Used in routes, e.g., /admin/collections/blog
     label: "Teams" # Used in the UI
     folder: "/teams" # The path to the folder where the documents are stored
-    media_folder: "static/assets"
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter

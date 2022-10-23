@@ -1,12 +1,14 @@
-import ReactPlayer from "react-player";
 import Image from "@theme/IdealImage";
 
 # 🎧 오늘의 노래
 
+```mdx-code-block
+import ReactPlayer from "react-player";
+
 <ReactPlayer
   url="https://www.youtube.com/watch?v=eNJJawrNq6E"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 ## 🎧 프로젝트 설명
 
@@ -85,14 +87,7 @@ import Image from "@theme/IdealImage";
 
 - Content-Based 추천 시스템
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/1.png")} />
-  </div>
+  ![](./assets/todays-song/1.png)
 
 유저에 대한 데이터가 별로 없는 서비스 초기에 이용할 추천 시스템
 
@@ -102,14 +97,7 @@ import Image from "@theme/IdealImage";
 
 - K-means Clustering 기반 추천 시스템
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/2.png")} />
-  </div>
+  ![](./assets/todays-song/2.png)
 
 유저의 플레이리스트 데이터가 있을 때 사용할 추천 시스템. (좋아요, 기존…)
 
@@ -121,14 +109,7 @@ import Image from "@theme/IdealImage";
 
 - Song2Vec 기반 추천 시스템
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/3.png")} />
-  </div>
+  ![](./assets/todays-song/3.png)
 
 “코딩할때 듣기 좋은 음악 추천해줘" 와 같이 특정 상황이 주어졌을 때 사용하는 추천 시스템.
 
@@ -142,14 +123,7 @@ Kaggle 1 million playlist dataset을 Word2Vec으로 미리 학습시켜놓음.
 
 ## 🎧 프로젝트 아키텍쳐
 
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-  }}
->
-  <Image img={require("./assets/3-todays-song/4.png")} />
-</div>
+![](./assets/todays-song/4.png)
 
 Next.js 기반 프론트엔드와 Spring boot 기반 백엔드를 사용하였다.
 
@@ -161,14 +135,7 @@ DB는 AWS RDB에 Postgresql을 이용하였다.
 
 나머지 서버들은 컨테이너화 하여 AWS ECS를 이용해서 배포하였다.
 
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-  }}
->
-  <Image img={require("./assets/3-todays-song/5.png")} />
-</div>
+![](./assets/todays-song/5.png)
 
 데이터셋 크롤러는 파이썬 기반 플레이리스트 크롤러, Node.js 기반 신곡 크롤러를 이용하였다.
 
@@ -182,57 +149,29 @@ TF-IDF 계산 함수 또한 AWS 람다에 업로드 후, Dataset이 저장되어
 
 - 로그인 페이지
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/6.png")} />
-  </div>
+  ![](./assets/todays-song/6.png)
 
 로그인은 스포티파이 소셜 로그인을 이용하였다.
 
 - 로딩 화면
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/7.png")} />
-  </div>
+  ![](./assets/todays-song/7.png)
 
 로그인 후 리디렉션 혹은 필터 조회 시 사용하는 로딩 화면
 
 - 유저 별 필터(취향) 선택 화면
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/8.png")} />
-    <Image img={require("./assets/3-todays-song/9.png")} />
-    <Image img={require("./assets/3-todays-song/10.png")} />
-    <Image img={require("./assets/3-todays-song/11.png")} />
-  </div>
+  ![](./assets/todays-song/8.png)
+  ![](./assets/todays-song/9.png)
+  ![](./assets/todays-song/10.png)
+  ![](./assets/todays-song/11.png)
 
 유저별로 좋아하는 노래, 속도, 무드, 현재 감정상태를 수집하여 이를 기반으로 추천을 진행하였다.
 
 - 추천된 노래 조회 화면
 
-  <div
-    style={{
-      maxWidth: "640px",
-      margin: "2rem auto",
-    }}
-  >
-    <Image img={require("./assets/3-todays-song/12.png")} />
-    <Image img={require("./assets/3-todays-song/13.png")} />
-  </div>
+  ![](./assets/todays-song/12.png)
+  ![](./assets/todays-song/13.png)
 
 스포티파이 Web Playback SDK를 이용하여 실제로 추천받은 노래를 재생해 볼 수 있도록 구성하였다.
 

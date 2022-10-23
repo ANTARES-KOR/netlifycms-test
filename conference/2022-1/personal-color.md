@@ -2,15 +2,15 @@
 sidebar_label: ✅ 봄 여름 가을 겨울
 ---
 
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # ✅ 봄여름가을겨울 - 퍼스널컬러 진단 AI
+
+```mdx-code-block
+import ReactPlayer from "react-player";
 
 <ReactPlayer
   url="https://www.youtube.com/watch?v=WJGSemkQzJI"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 :::note 개요
 **인물 사진을 업로드하면** **학습된 AI가 퍼스널컬러 진단**하고 결과값을 내보내는 **플랫폼 구현**
@@ -18,18 +18,14 @@ import Image from "@theme/IdealImage";
 
 ## ✅ 프로젝트 진행 과정
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/7-personal-color/1.png")} />
-</div>
+![](./assets/personal-color/1.png)
 
 ### 개요
 
 - 퍼스널컬러란 사람의 피부톤과 가장 잘 어울리는 색채학 이론으로 색, 채도, 명도를 바탕으로 봄웜/여름쿨/가을웜/겨울쿨로 나눈다
 - 퍼스널컬러는 개인에게 더 맞는 화장품, 옷, 장신구 등을 찾을 수 있게 해 활용도 점점 높아지지만 진단 받는 것은 시간과 비용이 많이 든다 → 서비스 구현하게 된 계기
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/7-personal-color/2.png")} />
-</div>
+![](./assets/personal-color/2.png)
 
 ### 서비스 아키텍처
 
@@ -46,17 +42,13 @@ import Image from "@theme/IdealImage";
 
 ### 웹페이지 구현
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/7-personal-color/3.png")} />
-</div>
+![](./assets/personal-color/3.png)
 
 1. **인풋 화면**
    - 유저가 얼굴이 잘 보이는 인물 사진을 업로드
    - 업로드 된 사진은 서버로 넘어가 pre-trained 모델이 퍼스널컬러 값을 진단
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/7-personal-color/4.png")} />
-</div>
+![](./assets/personal-color/4.png)
 
 2. **결과 화면**
    - 모델에서 분석한 퍼스널컬러 결과값(봄, 여름, 가을, 겨울)을 페이지로 내보낸다

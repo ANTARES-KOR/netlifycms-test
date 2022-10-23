@@ -2,15 +2,15 @@
 sidebar_label: 📚 북실북실 # 사이드바에 표시될 라벨. 이걸 안쓸 경우 파일명이 표시됨
 ---
 
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # 📚 북실북실 - 아동도서관리 어플리케이션
+
+```
+import ReactPlayer from "react-player";
 
 <ReactPlayer
   url="https://www.youtube.com/watch?v=qekmi_4Milw"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 ## Project
 
@@ -22,9 +22,7 @@ client side에서 사진을 찍으면 server가 **Book Detection 모델**에 전
 
 DB에 저장된 user별 bookshelf 내의 books 목록 기반 **추천 모델 결과** 반환
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/9-booksilbooksil/1.png")} />
-</div>
+![](./assets/booksilbooksil/1.png)
 
 ### Book Detection
 
@@ -32,16 +30,8 @@ DB에 저장된 user별 bookshelf 내의 books 목록 기반 **추천 모델 결
 
 Segmentation 라이브러리인 **Detectron2**로 **Mask R-CNN** 학습
 
-<div
-  style={{
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/2.png")} />
-  <Image img={require("./assets/9-booksilbooksil/3.png")} />
-</div>
+![](./assets/booksilbooksil/2.png)
+![](./assets/booksilbooksil/3.png)
 
 segmentation된 책등 이미지로부터 **CLOVA OCR**을 이용해 책 제목 텍스트 추출
 
@@ -73,67 +63,20 @@ segmentation된 책등 이미지로부터 **CLOVA OCR**을 이용해 책 제목 
 - Backend : Node.js
 - DB : mariaDB
 
-<div
-  style={{
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/4.png")} />
-  <Image img={require("./assets/9-booksilbooksil/5.png")} />
-  <Image img={require("./assets/9-booksilbooksil/6.png")} />
-</div>
+![](./assets/booksilbooksil/4.png)
+![](./assets/booksilbooksil/5.png)
+![](./assets/booksilbooksil/6.png)
 
 ---
 
 ## 최종 결과물
 
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/7.png")} />
-  <Image img={require("./assets/9-booksilbooksil/8.png")} />
-</div>
-
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/9.png")} />
-  <Image img={require("./assets/9-booksilbooksil/10.png")} />
-</div>
-
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/11.png")} />
-  <Image img={require("./assets/9-booksilbooksil/12.png")} />
-  <Image img={require("./assets/9-booksilbooksil/13.png")} />
-</div>
-
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/9-booksilbooksil/14.png")} />
-  <Image img={require("./assets/9-booksilbooksil/15.png")} />
-</div>
+![](./assets/booksilbooksil/7.png)
+![](./assets/booksilbooksil/8.png)
+![](./assets/booksilbooksil/9.png)
+![](./assets/booksilbooksil/10.png)
+![](./assets/booksilbooksil/11.png)
+![](./assets/booksilbooksil/12.png)
+![](./assets/booksilbooksil/13.png)
+![](./assets/booksilbooksil/14.png)
+![](./assets/booksilbooksil/15.png)

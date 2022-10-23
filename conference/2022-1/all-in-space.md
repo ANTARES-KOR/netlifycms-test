@@ -2,15 +2,13 @@
 sidebar_label: 🗣 All-in-Space
 ---
 
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # 🗣 소통 활성화 협업툴, All-in-Space
 
-<ReactPlayer
-  url="https://www.youtube.com/watch?v=j0wQGtmTV7o&list=PLIZ3mKAU9ragTzp-a_eM3aZuuthV7WzDX"
-  style={{ margin: "4rem auto" }}
-/>
+```mdx-code-block
+import ReactPlayer from "react-player";
+
+<ReactPlayer url="https://youtu.be/j0wQGtmTV7o" />
+```
 
 ## 🗣️ 프로젝트 파이프라인 및 진행 과정
 
@@ -27,9 +25,7 @@ import Image from "@theme/IdealImage";
   - 협업 팀에 속한 개인들이 각자 생각하는 이 팀에서 공동으로 달성해야 하는 목표, 분업이 필요한 업무(TODO)를 입력하도록 한다
   - 입력을 하나의 거대한 리스트로 모아 Textual Clustering 진행
   - Cluster 결과를 팀원들에게 공유해 팀에서 달성해야 한다고 생각하는 목표에 대한 Insight, 팀원들이 무엇을 공통으로 추구하고자 하는지에 대한 요약 정보를 제공 → **소통의 시작을 활성화할 수 있는 정보 제공**
-    <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-      <Image img={require("./assets/1-all-in-space/1.png")} />
-    </div>
+    ![](./assets/all-in-space/1.png)
 - **Positive Feedback Loop Framework**
 
   - 한가지의 공동 to-do task가 완료되면, 그 task에 대해 피드백 요청이 가능
@@ -38,15 +34,11 @@ import Image from "@theme/IdealImage";
   - 공격적 발언 탐지 → 긍정적 피드백 효과를 방해하는 요소를 필터링하여 피드백 대상에게 전달 / 공격적 발언을 기입한 팀원에게 탐지 결과 전달 및 표현 지양 요청
   - → 공격적 발언이 최소화되는 피드백을 주고받을 수 있도록 협업 과정에서 바람직한 방향의 소통 독려
 
-    <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-      <Image img={require("./assets/1-all-in-space/2.png")} />
-    </div>
+    ![](./assets/all-in-space/2.png)
 
 - 기술 확립 이후, 기술의 결과물을 담아 협업에 도움이 되는 방향으로 제공할 수 있도록 figma 디자인 툴을 이용해 페이지 디자인 제작
 
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/3.png")} />
-  </div>
+  ![](./assets/all-in-space/3.png)
 
 ### Modeling + 각 Backend, Frontend, Model 연결 (파이프라인 설명 포함)
 
@@ -66,9 +58,7 @@ import Image from "@theme/IdealImage";
   - axios를 활용하여 http 통신을 진행, DB: MySQL 활용
   - Pytorch를 활용한 NLP model: 별도의 flask 서버에 올려 함께 inference 된 결과값을 백엔드와의 통신을 통해 가져올 수 있도록 설계
 
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/4.png")} />
-  </div>
+  ![](./assets/all-in-space/4.png)
 
 - React 프레임워크를 이용해 구축된 웹사이트를 이용하여 **클러스터링 할 Todo,** 작성한 **피드백 내용 등의 input**을 전송
 - Spring 기반의 백엔드 서버가 DB에 따로 저장을 한 후, 모델 서버(Flask)로 데이터를 전송
@@ -77,33 +67,19 @@ import Image from "@theme/IdealImage";
 ## 🗣️ 프로젝트 결과
 
 - **To-Do Clustering**
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/5.png")} />
-  </div>
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/6.png")} />
-  </div>
+  ![](./assets/all-in-space/5.png)
+  ![](./assets/all-in-space/6.png)
 - **Positive Feedback Loop Framework**
 
   - 성차별, 욕설, 지역적 발언 등의 다양한 유형의 공격적 발언 탐지 가능
 
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/7.png")} />
-  </div>
-  <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-    <Image img={require("./assets/1-all-in-space/8.png")} />
-  </div>
+  ![](./assets/all-in-space/7.png)
+  ![](./assets/all-in-space/8.png)
 
 - 페이지 구현 및 모델 얹기
   - Login
-    <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-      <Image img={require("./assets/1-all-in-space/9.png")} />
-    </div>
+    ![](./assets/all-in-space/9.png)
   - Clustering
-    <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-      <Image img={require("./assets/1-all-in-space/10.png")} />
-    </div>
+    ![](./assets/all-in-space/10.png)
   - To-Do Tree
-    <div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-      <Image img={require("./assets/1-all-in-space/11.png")} />
-    </div>
+    ![](./assets/all-in-space/11.png)

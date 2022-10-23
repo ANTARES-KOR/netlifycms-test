@@ -1,20 +1,18 @@
-import ReactPlayer from "react-player";
-import Image from "@theme/IdealImage";
-
 # 💬 이 리뷰 믿을 수 있어?
+
+```mdx-code-block
+import ReactPlayer from "react-player";
 
 <ReactPlayer
   url="https://www.youtube.com/watch?v=HeA739n23Ss"
-  style={{ margin: "4rem auto" }}
 />
+```
 
 ## 💬 프로젝트 진행 과정
 
 ### 1. 데이터 전처리
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/1.png")} />
-</div>
+![](./assets/review-monster/1.png)
 
 1. 카카오맵 리뷰 데이터 크롤링
 2. KoBERT 활용 감성분석 모델링
@@ -28,9 +26,7 @@ SSE 값, 실루엣 지수와 칼린스키 지표 기반, 군집 수를 6개로 �
 
 각 군집의 특징적인 centroid 값 기반 군집별 이름 선정
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/2.png")} />
-</div>
+![](./assets/review-monster/2.png)
 
 ### 3. 신뢰도 모델링
 
@@ -49,42 +45,32 @@ SSE 값, 실루엣 지수와 칼린스키 지표 기반, 군집 수를 6개로 �
 
 ### 4. 사용 아키텍처
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/3.png")} />
-</div>
+![](./assets/review-monster/3.png)
 
 ## 💬 프로젝트 결과: 리뷰몬
 
 ### 맛집 둘러보기
 
-<div style={{ maxWidth: "360px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/5.png")} />
-</div>
+![](./assets/review-monster/5.png)
 
 - 카카오맵 검색창 페이지로 연동되어 음식점 확인
 
 ### 가게별 리뷰 검색
 
-<div style={{ maxWidth: "360px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/6.png")} />
-</div>
+![](./assets/review-monster/6.png)
 
 - 리뷰를 확인하고 싶은 가게 명 검색
 
 ### 리뷰 신뢰도 확인
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/7.png")} />
-</div>
+![](./assets/review-monster/7.png)
 
 - 리뷰의 프로필: 해당 리뷰어의 군집
 - 프로필 주위 색상: 해당 리뷰의 신뢰도 정도를 의미
 
 #### 필터 1: 믿을 수 있는 리뷰만
 
-<div style={{ maxWidth: "640px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/8.png")} />
-</div>
+![](./assets/review-monster/8.png)
 
 - 신뢰도가 낮은 리뷰는 제거됨
 
@@ -92,33 +78,20 @@ SSE 값, 실루엣 지수와 칼린스키 지표 기반, 군집 수를 6개로 �
 
 #### 필터 2: 태그
 
-<div style={{ maxWidth: "360px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/9.png")} />
-</div>
+![](./assets/review-monster/9.png)
 
 - 원하는 군집에 해당하는 리뷰어가 남긴 리뷰만 확인 가능
 
 ### 유저별 리뷰 내용 확인
 
-<div style={{ maxWidth: "360px", margin: "2rem auto" }}>
-  <Image img={require("./assets/6-review-monster/10.png")} />
-</div>
+![](./assets/review-monster/10.png)
 
 - 각 리뷰어가 남긴 리뷰는 한번에 확인 가능
 
 ### 리뷰 작성
 
-<div
-  style={{
-    maxWidth: "640px",
-    margin: "2rem auto",
-    display: "flex",
-    gap: "1rem",
-  }}
->
-  <Image img={require("./assets/6-review-monster/11.png")} />
-  <Image img={require("./assets/6-review-monster/12.png")} />
-</div>
+![](./assets/review-monster/11.png)
+![](./assets/review-monster/12.png)
 
 - 직접 리뷰를 작성할 수 있는 기능
 - 해당 리뷰의 신뢰도가 낮다면 경고 창이 뜸
