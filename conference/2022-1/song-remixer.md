@@ -1,4 +1,6 @@
-import Image from "@theme/IdealImage";
+---
+title: song-remixer
+---
 
 # 🎶 이 노래 지겨워!
 

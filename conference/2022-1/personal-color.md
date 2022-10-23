@@ -1,4 +1,5 @@
 ---
+title: personal-color
 sidebar_label: ✅ 봄 여름 가을 겨울
 ---
 

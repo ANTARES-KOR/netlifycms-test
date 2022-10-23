@@ -98,4 +98,3 @@ collections:
           description: "사이드바에 표시되는 라벨입니다. 비워둘 경우 문서 제일 위의 # 에 해당하는 제목을 이용합니다",
         }
       - { label: "Body", name: "body", widget: "markdown" }
-    # meta: { path: { widget: "string", label: "Path", index_file: "index" } }

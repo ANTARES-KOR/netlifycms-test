@@ -1,4 +1,6 @@
-import Image from "@theme/IdealImage";
+---
+title: todays-song
+---
 
 # 🎧 오늘의 노래
 
