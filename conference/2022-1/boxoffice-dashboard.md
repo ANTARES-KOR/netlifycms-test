@@ -1,9 +1,9 @@
 ---
 title: 박스오피스 대시보드
-sidebar_label: 📽️ Boxoffice DashBoard
+sidebar_label: 📽️ 박스오피스 대시보드
 ---
 
-# 📽️ Boxoffice DashBoard
+# 📽️ 박스오피스 대시보드
 
 ```mdx-code-block
 import ReactPlayer from "react-player";

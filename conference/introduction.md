@@ -1,5 +1,6 @@
 ---
 title: 소개
+id: intro
 sidebar_position: 0
 ---
 
