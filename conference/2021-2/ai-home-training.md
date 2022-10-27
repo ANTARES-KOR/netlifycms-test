@@ -36,4 +36,6 @@ sidebar_label: 🏃🏻 AI 홈 트레이닝 코치
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666878436/conference/2021-2/3_am1yur.png)
 
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666878695/conference/2021-2/5_bebngb.png)
+
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666878435/conference/2021-2/4_m1jcjl.png)
