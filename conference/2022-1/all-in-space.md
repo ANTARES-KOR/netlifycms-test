@@ -71,28 +71,30 @@ import ReactPlayer from 'react-player';
 
 * **To-Do Clustering**
 
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/5_rdvnpu.png)
 
-  ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/5_rdvnpu.png)
-
-  ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/6_gi2lwm.png)
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/6_gi2lwm.png)
 * **Positive Feedback Loop Framework**
 
   * 성차별, 욕설, 지역적 발언 등의 다양한 유형의 공격적 발언 탐지 가능
 
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/7_np4laz.png)
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/7_np4laz.png)
 
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/8_n7ldzd.png)
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/8_n7ldzd.png)
+
+
 * 페이지 구현 및 모델 얹기
 
   * Login
 
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/9_qeqwua.png "10")
 
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/9_qeqwua.png)
+
   * Clustering
 
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/10_tcpvgm.png "11")
 
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/10_tcpvgm.png)
+
   * To-Do Tree
 
-
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/11_ltwg15.png)
+ ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/11_ltwg15.png "12")
