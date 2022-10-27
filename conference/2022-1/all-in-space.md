@@ -4,12 +4,13 @@ sidebar_label: 🗣 All-in-Space
 ---
 # 🗣 소통 활성화 협업툴, All-in-Space
 
-```
-import ReactPlayer from 'react-player';
-        
-<ReactPlayer url="https://youtu.be/j0wQGtmTV7o" />
-      
-```
+
+            ```mdx-code-block
+              import ReactPlayer from 'react-player';
+            
+              <ReactPlayer url="https://youtu.be/j0wQGtmTV7o" />
+            ```
+          
 
 ## 🗣️ 프로젝트 파이프라인 및 진행 과정
 
