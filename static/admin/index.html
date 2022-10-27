@@ -28,26 +28,20 @@
           },
         ],
         pattern:
-          /```mdx-code-block\n.*\n*<ReactPlayer.*url="(.*?)".*\/>\n```/ms,
+          /```mdx-code-block.*\n*.*[\s]*<ReactPlayer.*url="(.*?)".*\/>.*\n.*```/ms,
         fromBlock: function (match) {
           return {
             link: match[1],
           };
         },
         toBlock: function (data) {
-          return `
-            \`\`\`mdx-code-block
-              import ReactPlayer from 'react-player';
-            
-              <ReactPlayer url="${data.link}" />
-            \`\`\`
-          `;
+          return `\`\`\`mdx-code-block\nimport ReactPlayer from 'react-player';\n<ReactPlayer url="${data.link}" />\n\`\`\``;
         },
         toPreview: function (data) {
           const videoId = parseYoutubeVideoId(data.link);
           console.log(videoId);
           return `
-            <div style="width: 640px; height:360px;" >
+            <div style="width: 100%; max-width: 640px; height:360px;" >
               <iframe
                 frameborder="0"
                 allowfullscreen="1"
