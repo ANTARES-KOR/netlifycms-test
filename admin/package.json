@@ -5,8 +5,8 @@
   "main": "/dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/main.js",
-    "build": "parcel build src/main.js"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "dependencies": {
     "netlify-cms-app": "^2.15.72",
