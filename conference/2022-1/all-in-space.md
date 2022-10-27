@@ -26,7 +26,8 @@ import ReactPlayer from 'react-player';
   * 입력을 하나의 거대한 리스트로 모아 Textual Clustering 진행
   * Cluster 결과를 팀원들에게 공유해 팀에서 달성해야 한다고 생각하는 목표에 대한 Insight, 팀원들이 무엇을 공통으로 추구하고자 하는지에 대한 요약 정보를 제공 → **소통의 시작을 활성화할 수 있는 정보 제공**
 
-    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/1_npqzkv.png)
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/1_npqzkv.png)
+
 * **Positive Feedback Loop Framework**
 
   * 한가지의 공동 to-do task가 완료되면, 그 task에 대해 피드백 요청이 가능
@@ -35,10 +36,11 @@ import ReactPlayer from 'react-player';
   * 공격적 발언 탐지 → 긍정적 피드백 효과를 방해하는 요소를 필터링하여 피드백 대상에게 전달 / 공격적 발언을 기입한 팀원에게 탐지 결과 전달 및 표현 지양 요청
   * → 공격적 발언이 최소화되는 피드백을 주고받을 수 있도록 협업 과정에서 바람직한 방향의 소통 독려
 
-    ![](./assets/all-in-space/2.png)
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/2_jzsegy.png)
+
 * 기술 확립 이후, 기술의 결과물을 담아 협업에 도움이 되는 방향으로 제공할 수 있도록 figma 디자인 툴을 이용해 페이지 디자인 제작
 
-  ![](./assets/all-in-space/3.png)
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/3_lusfla.png)
 
 ### Modeling + 각 Backend, Frontend, Model 연결 (파이프라인 설명 포함)
 
@@ -59,7 +61,8 @@ import ReactPlayer from 'react-player';
   * axios를 활용하여 http 통신을 진행, DB: MySQL 활용
   * Pytorch를 활용한 NLP model: 별도의 flask 서버에 올려 함께 inference 된 결과값을 백엔드와의 통신을 통해 가져올 수 있도록 설계
 
-  ![](./assets/all-in-space/4.png)
+![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/4_sx0egd.png)
+
 * React 프레임워크를 이용해 구축된 웹사이트를 이용하여 **클러스터링 할 Todo,** 작성한 **피드백 내용 등의 input**을 전송
 * Spring 기반의 백엔드 서버가 DB에 따로 저장을 한 후, 모델 서버(Flask)로 데이터를 전송
 * 학습된 모델 서버에서의 inference를 통해 **클러스터링 된 todo목록, 또는** **필터링/탐지된 피드백 결과**를 다시 벡엔드 서버에 전송 : 페이지를 통해 user에게 전달
@@ -67,19 +70,29 @@ import ReactPlayer from 'react-player';
 ## 🗣️ 프로젝트 결과
 
 * **To-Do Clustering**
-  ![](./assets/all-in-space/5.png)
-  ![](./assets/all-in-space/6.png)
+
+
+  ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/5_rdvnpu.png)
+
+  ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/6_gi2lwm.png)
 * **Positive Feedback Loop Framework**
 
   * 성차별, 욕설, 지역적 발언 등의 다양한 유형의 공격적 발언 탐지 가능
 
-  ![](./assets/all-in-space/7.png)
-  ![](./assets/all-in-space/8.png)
+    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/7_np4laz.png)
+
+    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/8_n7ldzd.png)
 * 페이지 구현 및 모델 얹기
 
   * Login
-    ![](./assets/all-in-space/9.png)
+
+
+    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/9_qeqwua.png)
   * Clustering
-    ![](./assets/all-in-space/10.png)
+
+
+    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/10_tcpvgm.png)
   * To-Do Tree
-    ![](./assets/all-in-space/11.png)
+
+
+    ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/11_ltwg15.png)
