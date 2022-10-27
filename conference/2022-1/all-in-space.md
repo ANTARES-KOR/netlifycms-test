@@ -29,7 +29,6 @@ sidebar_label: 🗣 All-in-Space
   * 입력을 하나의 거대한 리스트로 모아 Textual Clustering 진행
   * Cluster 결과를 팀원들에게 공유해 팀에서 달성해야 한다고 생각하는 목표에 대한 Insight, 팀원들이 무엇을 공통으로 추구하고자 하는지에 대한 요약 정보를 제공 → **소통의 시작을 활성화할 수 있는 정보 제공**
 
-
     ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/1_npqzkv.png)
 * **Positive Feedback Loop Framework**
 
