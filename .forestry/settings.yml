@@ -25,10 +25,10 @@ sections:
   match: "**/*"
   templates:
   - teams
-upload_dir: static/assets
-public_path: "/assets"
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_output_directory: "/build"
