@@ -1,5 +1,5 @@
 ---
-label: Conference-Category
+label: Conference Category
 hide_body: true
 fields:
 - type: number
