@@ -1,5 +1,5 @@
 ---
-title: kbo-dashboard
+title: KBO 대시보드
 sidebar_label: 🧢 KBO 대시보드
 ---
 
