@@ -58,4 +58,5 @@ jobs:
         uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: pages publish ./build --env=${{ github.event.inputs.environment }} --project-name=${{ env.PROJECT_NAME }}
+          environment: ${{ github.event.inputs.environment }}
+          command: pages publish ./build --project-name=${{ env.PROJECT_NAME }}
