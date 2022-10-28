@@ -1,12 +1,16 @@
 ---
 title: All in space
-sidebar_label: 🗣 All-in-Space
+sidebar_label: "\U0001F5E3 All-in-Space"
+
 ---
 # 🗣 소통 활성화 협업툴, All-in-Space
 
 ```mdx-code-block
-import ReactPlayer from 'react-player';
-<ReactPlayer url="https://youtu.be/j0wQGtmTV7o" />
+import ReactPlayer from "react-player";
+
+<ReactPlayer
+  url="https://youtu.be/j0wQGtmTV7o"
+/>
 ```
 
 ## 🗣️ 프로젝트 파이프라인 및 진행 과정
@@ -21,7 +25,6 @@ import ReactPlayer from 'react-player';
 
 * 서비스에 담을 핵심 기술 2개 확정: **To-Do Clustering + Positive Feedback Loop Framework**
 * **To-Do Clustering**
-
   * 협업 팀에 속한 개인들이 각자 생각하는 이 팀에서 공동으로 달성해야 하는 목표, 분업이 필요한 업무(TODO)를 입력하도록 한다
   * 입력을 하나의 거대한 리스트로 모아 Textual Clustering 진행
   * Cluster 결과를 팀원들에게 공유해 팀에서 달성해야 한다고 생각하는 목표에 대한 Insight, 팀원들이 무엇을 공통으로 추구하고자 하는지에 대한 요약 정보를 제공 → **소통의 시작을 활성화할 수 있는 정보 제공**
@@ -29,7 +32,6 @@ import ReactPlayer from 'react-player';
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/1_npqzkv.png)
 
 * **Positive Feedback Loop Framework**
-
   * 한가지의 공동 to-do task가 완료되면, 그 task에 대해 피드백 요청이 가능
   * 팀의 나머지 팀원들이 task를 수행한 팀원에 대한 피드백을 기입 - 전달
   * 전달 과정 사이에서 공격적인 발언을 탐지하는 모델 사용
@@ -45,7 +47,6 @@ import ReactPlayer from 'react-player';
 ### Modeling + 각 Backend, Frontend, Model 연결 (파이프라인 설명 포함)
 
 * Modeling 세부사항
-
   * **Clustering**
   * embedding : KoSBERT-KLUE-BERT-base 모델 사용
   * Kmeans + K 설정하기 위해 Silhouette Score, early stopping 개념 응용
@@ -55,7 +56,6 @@ import ReactPlayer from 'react-player';
   * 피드백 작성한 팀원에게 긍정적 피드백 전달을 위한 교정 사항 전달 + 피드백 대상인 팀원에게 공격 발언을 제외한 피드백 모음 전달
   * BEEP!, Apeach, Unsmile Dataset 등 여러 인터넷 상 혐오 발언, Hate-Speech에 대한 라벨링을 진행한 한국어 데이터셋을 이용하여 위 두 모델의 Fine-Tuning 진행
 * 전체적 아키텍쳐
-
   * 워크스페이스가 보여지는 모든 부분들은 React를 통해 구성
   * 서버에서 정보를 저장 및 처리해주는 부분들은 모두 Spring으로 구현
   * axios를 활용하여 http 통신을 진행, DB: MySQL 활용
@@ -76,26 +76,21 @@ import ReactPlayer from 'react-player';
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/6_gi2lwm.png)
 
 * **Positive Feedback Loop Framework**
-
   * 성차별, 욕설, 지역적 발언 등의 다양한 유형의 공격적 발언 탐지 가능
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/7_np4laz.png)
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834413/conference/2022-1/all-in-space/8_n7ldzd.png)
 
-
 * 페이지 구현 및 모델 얹기
-
   * Login
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/9_qeqwua.png)
 
-
-  * Clustering
+* Clustering
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/10_tcpvgm.png)
 
-
-  * To-Do Tree
+* To-Do Tree
 
 ![](https://res.cloudinary.com/dr6b9c9ko/image/upload/v1666834414/conference/2022-1/all-in-space/11_ltwg15.png)
