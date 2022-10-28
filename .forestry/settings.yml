@@ -20,14 +20,6 @@ sections:
   - teams
 - type: directory
   path: conference
-  label: Conference Category
-  create: all
-  match: "**/_category_.yml"
-  exclude: "*.md"
-  templates:
-  - conference-category
-- type: directory
-  path: conference
   label: Conference
   create: all
   match: "**/*"
