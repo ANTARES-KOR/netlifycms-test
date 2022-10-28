@@ -3,17 +3,19 @@
 
 name: Deploy to Cloudflare Pages
 
-on: 
+env:
+  PROJECT_NAME: introducing-ybigta
+
+on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'Environment to run deployment against'
+        description: "Environment to run deployment against"
         type: environment
         required: true
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -48,6 +50,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      
-      
-    
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@2.0.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: pages publish ./build --env=${{ github.event.inputs.environment }} --project-name=${{ env.PROJECT_NAME }}
