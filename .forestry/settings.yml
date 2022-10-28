@@ -22,7 +22,7 @@ sections:
   path: conference
   label: Conference Category
   create: all
-  match: "**/*.yml"
+  match: "**/*"
   exclude: "*.md"
   templates:
   - conference-category
