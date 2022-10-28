@@ -26,7 +26,7 @@ sections:
   templates:
   - teams
 upload_dir: ''
-public_path: ''
+public_path: https://res.cloudinary.com/dr6b9c9ko/image/upload
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
