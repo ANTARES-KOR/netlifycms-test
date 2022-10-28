@@ -47,5 +47,6 @@ import ReactPlayer from "react-player";
 <iframe 
   src="https://yonjaeee.github.io/demo_page/page/%EC%95%84%EC%9D%B4%EC%9C%A0.html"
   frameborder="0"
+  style="width: 100%; height: 400px;"
 />
 ```
