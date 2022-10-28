@@ -5,19 +5,27 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: conference
-  label: Conference Category
-  create: all
-  match: "**/*"
-  templates:
-  - conference-category
-- type: directory
   path: about
   label: About
   create: documents
   match: "**/*"
   templates:
   - about
+- type: directory
+  path: teams
+  label: Teams
+  create: documents
+  match: "**/*"
+  templates:
+  - teams
+- type: directory
+  path: conference
+  label: Conference Category
+  create: all
+  match: "**/*.yml"
+  exclude: "*.md"
+  templates:
+  - conference-category
 - type: directory
   path: conference
   label: Conference
@@ -26,13 +34,6 @@ sections:
   exclude: _category_.yml
   templates:
   - conference
-- type: directory
-  path: teams
-  label: Teams
-  create: documents
-  match: "**/*"
-  templates:
-  - teams
 upload_dir: static/assets
 public_path: "/assets"
 front_matter_path: ''
