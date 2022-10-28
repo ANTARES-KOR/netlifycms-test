@@ -7,6 +7,11 @@ sidebar_label: "\U0001F3C3\U0001F3FB AI 홈 트레이닝 코치"
 
 사용자의 현재 운동 동작에 대해 횟수 카운트, 자세 교정과 같은 실시간 피드백을 제공하는 온디바이스 어플리케이션 제작
 
+```mdx-code-block
+import ReactPlayer from 'react-player';
+<ReactPlayer url="https://youtu.be/CPEmuL4OfqU" />
+```
+
 ## 프로젝트 진행 과정
 
 ### 전체 파이프라인(Swift로 앱 개발)
