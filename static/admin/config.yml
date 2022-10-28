@@ -13,6 +13,7 @@ media_library:
 
 publish_mode: editorial_workflow
 site_url: https://introducing-ybigta.pages.dev
+logo_url: https://introducing-ybigta.pages.dev/img/logo.svg
 locale: "ko"
 
 collections:
