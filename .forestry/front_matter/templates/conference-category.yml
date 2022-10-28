@@ -1,0 +1,10 @@
+---
+label: Conference-Category
+hide_body: true
+fields:
+- type: number
+  name: position
+  label: position
+- type: text
+  name: label
+  label: label
