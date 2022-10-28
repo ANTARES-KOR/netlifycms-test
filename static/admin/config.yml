@@ -22,6 +22,8 @@ collections:
     folder: "/about" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false
     fields: # The fields for each document, usually in front matter
       - {
           label: "제목",
@@ -80,6 +82,8 @@ collections:
     folder: "/conference"
     create: true
     slug: "{{title}}"
+    editor:
+      preview: false
     fields:
       - {
           label: "제목",
@@ -105,6 +109,8 @@ collections:
     folder: "/conference/2021-1"
     create: true
     slug: "{{title}}"
+    editor:
+      preview: false
     fields:
       - {
           label: "제목",
@@ -127,6 +133,8 @@ collections:
     folder: "/conference/2021-2"
     create: true
     slug: "{{title}}"
+    editor:
+      preview: false
     fields:
       - {
           label: "제목",
@@ -149,6 +157,8 @@ collections:
     folder: "/conference/2022-1"
     create: true
     slug: "{{title}}"
+    editor:
+      preview: false
     fields:
       - {
           label: "제목",
