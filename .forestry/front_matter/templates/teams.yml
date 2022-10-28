@@ -1,0 +1,13 @@
+---
+label: Teams
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: sidebar_position
+  label: sidebar_position
+- type: text
+  name: sidebar_label
+  label: sidebar_label
