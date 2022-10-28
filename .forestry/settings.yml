@@ -1,0 +1,40 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: directory
+  path: about
+  label: About
+  create: documents
+  match: "**/*"
+  templates:
+  - about
+- type: directory
+  path: teams
+  label: Teams
+  create: documents
+  match: "**/*"
+  templates:
+  - teams
+- type: directory
+  path: conference
+  label: Conference
+  create: all
+  match: "**/*"
+  exclude: _category_.yml
+  templates:
+  - conference
+upload_dir: static/assets
+public_path: "/assets"
+front_matter_path: ''
+use_front_matter_path: 
+file_template: ":filename:"
+build:
+  preview_output_directory: "/build"
+  install_dependencies_command: pnpm install
+  preview_docker_image: ianwalter/pnpm:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: pnpm start
